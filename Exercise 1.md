@@ -12,12 +12,13 @@
 - Conflict
 
 **Definitions:**
+
+- A project folder tracked by Git.
 - A snapshot of changes recorded in the Git history.
 - A copy of your codebase for parallel development.
-- A project folder tracked by Git.
+- Combines changes from different branches.
 - A holding area for files before committing.
 - Happens when two commits modify the same line.
-- Combines changes from different branches.
 
 ---
 
@@ -25,11 +26,11 @@
 
 **2. Git Commands Quiz:** Fill in the missing commands.
 
-1. Initialize a new Git project: `git _______`
-2. Create a new branch called "feature-x": `git _______ feature-x`
-3. Stage all files: `git _______ .`
-4. See changes that are staged: `git _______`
-5. Combine changes from feature-x to main: `git _______ feature-x`
+1. Initialize a new Git project: `git (init)`
+2. Create a new branch called "feature-x": `git (branch or checkout -b) feature-x`
+3. Stage all files: `git (add .) `
+4. See changes that are staged: `git (status)`
+5. Combine changes from feature-x to main: `git (mergre) feature-x`
 
 ---
 
@@ -41,7 +42,12 @@ You're working on a team project. You've added a new feature in a branch called 
 
 List the steps one by one.
 
----
+- git checkout feature/login
+- git add .
+- git commit -m "add new feature (login feature) to the project"
+- git push origin feature/login
+
+then i will open github and navigate to the repo, github suggest openning a pull request (Compare & pull request)
 
 ### Section 4: Best Practices
 
@@ -54,8 +60,4 @@ Write a clear and meaningful commit message for the following scenario:
 Bad Example: `update`  
 Your Turn:
 
----
-
-**Submission:**
-Please submit your answers as a `.md` or `.pdf` before [21/04/2025].
-
+- git commit -m "add responsive navbar component to my project"

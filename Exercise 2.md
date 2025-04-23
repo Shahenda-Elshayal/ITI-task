@@ -73,22 +73,29 @@
 
 - Make 3 small changes to your code/files.
 - For each, write a commit message using this format:
+
   ```
   [Type] Short description
 
   - What changed?
   - Why it was necessary?
   ```
-  Example:
-  ```
-  [Fix] Correct typo in README
 
-  - Fixed spelling of "installation" in README.md.
-  - Improves professionalism and clarity.
-  ```
+(git commit -m "Added new button to switch between arabic and english lang to make the website more accessible")
+
+Example:
+
+```
+[Fix] Correct typo in README
+
+- Fixed spelling of "installation" in README.md.
+- Improves professionalism and clarity.
+
+(git commit -m "fixed typo: Welcom > Welcome" )
 
 ---
 
 **💬 Bonus Challenge:** Create a `.bash_aliases` or `.zshrc` file to define aliases for common Git commands like `gs` for `git status`, `gc` for `git commit`, etc.
 
 Happy Coding! 🚀
+```
